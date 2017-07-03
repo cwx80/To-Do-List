@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+  <title>Assessment 2</title>
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+  <link rel="stylesheet" href="css/myStyle.css">
+  </head>
+  <body>
+    <div id="myHeader"><h1>To-Do List</h1></div>
+  	<div class="container">
+      <form id="myForm">
+  	    <label for="newItem">Add task title:</label>
+        <br/>
+        <!--  bind input -->
+  	    <input id="newItem" type="text" data-ng-model="newToDo.name">
+  	    <br/>
+  	    <label for="newItem">Add task description:</label>
+        <br/>
+  	    <input id="newItem" type="text" data-ng-model="newToDo.description">
+  	    <br/>
+      </form>
+    </div>
+    <!-- container div using the toDoList controller -->
+  	<div class="container" data-ng-controller="toDoList">
+      <!-- trigger makeNewToDo function to add the content to the inputs to the list array -->
+  		<button id="addButton" data-ng-click="makeNewToDo()">Add to list</button>
+  		<ul>
+        <!-- use data-ng-repeat to iterate through each index of the thingsToDo array -->
+  			<li data-ng-repeat="numOfThings in thingsToDo">
+          <!-- for each of the currently available list items, palce the title in bold and the description beneath -->
+	  			<strong>{{numOfThings.name}}</strong><br/>
+	  			{{numOfThings.description}}
+          <!-- add a button to each list item that triggers a function to delete the current list item -->
+	  			<button id="deleteButton" ng-click="remove(numOfThings)">Delete</button>
+  			</li>
+  		</ul>
+  	</div>
+  </body>
+  <!-- angularJS -->
+  <script src="js/angular.min.js"></script>
+  <script src="js/myScript.js"></script>
+  <script src="phonegap.js"></script>
+</html>
