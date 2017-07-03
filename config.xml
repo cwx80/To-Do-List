@@ -5,9 +5,7 @@
 		A basic to do list app.
 	</description>
 	
-	<platform name="android">
-		<icon src="images/icon.jpg" width="180" height="180" />
-	</platform>
+	<icon src="images/icon.jpg" platform="android" width="180" height="180" />
 	
 	<author email="conor.hamilton@webelevate.ie">
 	   Conor Hamilton
