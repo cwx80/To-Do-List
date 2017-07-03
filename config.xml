@@ -4,9 +4,11 @@
 	<description>
 		A basic to do list app.
 	</description>
-
-	<icon src="images/icon.jpg" />
-
+	
+	<platform name="android">
+		<icon src="images/icon.jpg" width="180" height="180" />
+	</platform>
+	
 	<author email="conor.hamilton@webelevate.ie" href="https://phonegap.com">
 	   PhoneGap Team
 	</author>
