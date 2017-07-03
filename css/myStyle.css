@@ -1,0 +1,52 @@
+form, li, button{
+	font-size: 3.5vw;
+}
+h1{
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	font-size: 6vw;
+	margin-top: 0px;
+	padding-top: 5%;
+	height: 75px;
+	/*code for gradient: https://www.w3schools.com/css/css3_gradients.asp*/
+	background: #e4efe9; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#93a5cf, #e4efe9); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#93a5cf, #e4efe9); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#93a5cf, #e4efe9); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#93a5cf, #e4efe9); /* Standard syntax */
+}
+body {
+	/*continue colour from header gradient */
+	background-color: #e4efe9;
+	margin: 0px;
+}
+.container {
+	margin: 2%;
+}
+input{
+	/*indent text to allow for rounded corners*/
+	text-indent: 25px;
+}
+input, #addButton {
+	width: 100%;
+	border: 2px solid;
+	/*round corners*/
+	border-radius: 25px;
+}
+li {
+	/*add dividing border for list items and wrap words to next line */
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	word-wrap: break-word;
+}
+#deleteButton {
+	float: right;
+	border: 2px solid;
+	border-radius: 25px;
+	/*reposition button within the dividing border for list items.
+	Code from: https://www.w3schools.com/css/css3_2dtransforms.asp*/
+	-ms-transform: translate(0px, -10px); /* IE 9 */
+    -webkit-transform: translate(0px, -10px); /* Safari */
+    transform: translate(0px, -10px);
+}
