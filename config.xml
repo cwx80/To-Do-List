@@ -5,7 +5,7 @@
 		A basic to do list app.
 	</description>
 
-	<icon scr="images/icon.jpg" />
+	<icon src="images/icon.jpg" />
 
 	<author email="conor.hamilton@webelevate.ie" href="https://phonegap.com">
 	   PhoneGap Team
