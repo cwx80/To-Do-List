@@ -36,7 +36,6 @@ input, #addButton {
 }
 li {
 	/*add dividing border for list items and wrap words to next line */
-	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 	word-wrap: break-word;
 }
@@ -46,7 +45,7 @@ li {
 	border-radius: 25px;
 	/*reposition button within the dividing border for list items.
 	Code from: https://www.w3schools.com/css/css3_2dtransforms.asp*/
-	-ms-transform: translate(0px, -10px); /* IE 9 */
-    -webkit-transform: translate(0px, -10px); /* Safari */
-    transform: translate(0px, -10px);
+	-ms-transform: translate(0px, -15px); /* IE 9 */
+    -webkit-transform: translate(0px, -15px); /* Safari */
+    transform: translate(0px, -15px);
 }
